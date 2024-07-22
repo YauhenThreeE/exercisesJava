@@ -1,17 +1,8 @@
 package org.example.dicision;
-import java.util.HashMap;  // Импортируем класс HashMap для хранения карт
-import java.util.Map;  // Импортируем интерфейс Map
 import java.util.Scanner;  // Импортируем класс Scanner для считывания ввода с консоли
 
 public class Administration {
-    // Статическое поле для хранения карт сотрудников, где ключ - ID сотрудника, значение - его магнитная карта
-    /*private static final Map<String, MagneticCard> cardDrawer = new HashMap<>();*/
 
-    // Метод для получения магнитной карты сотрудника по его ID
-   /* public static MagneticCard getMagneticCard(String employeeId) {
-        // Если карта для данного сотрудника не существует, создаем новую и добавляем в cardDrawer
-        return cardDrawer.computeIfAbsent(employeeId, id -> new MagneticCard());
-    }*/
 
     // Главный метод программы
     public static void main(String[] args) {
@@ -50,10 +41,7 @@ public class Administration {
                 System.out.println("Have a nice day!");
 
             }
-            // Если введено что-то непонятное, просим повторить ввод
-            /*else {
-                System.out.println("Could you rephrase that");
-            }*/
+
 
             System.out.println("--------------------------------------------------------");  // Разделитель для улучшения читаемости
         }
