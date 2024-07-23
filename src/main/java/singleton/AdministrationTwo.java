@@ -1,9 +1,9 @@
-package org.example.dicision;
-import java.util.Scanner;  // Импортируем класс Scanner для считывания ввода с консоли
+package singleton;
 
-import static org.example.dicision.MagneticCard.getInstance;
+import java.util.Scanner;
 
-public class Administration {
+
+public class AdministrationTwo {
 
 
     // Главный метод программы
@@ -33,7 +33,7 @@ public class Administration {
             // Если пользователь ввел "Y" (Да), выдаем карту
             if (input.equalsIgnoreCase("Y")) {
                 // Генерация нового экземпляра MagneticCard
-                MagneticCard card = getInstance();
+                Singleton card = Singleton.getInstance();
                 System.out.println("Here is your card: " + card);  // Выводим информацию о карте
             }
             // Если пользователь ввел "N" (Нет), говорим "Хорошего дня"
@@ -49,4 +49,3 @@ public class Administration {
         scanner.close();  // Закрываем объект Scanner для освобождения ресурсов
     }
 }
-
