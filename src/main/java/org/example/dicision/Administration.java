@@ -32,12 +32,11 @@ public class Administration {
             // Если пользователь ввел "Y" (Да), выдаем карту
             if (input.equalsIgnoreCase("Y")) {
                 // Генерация нового экземпляра MagneticCard
-                MagneticCard card = new MagneticCard();
+                MagneticCard card = MagneticCard.getInstance();
                 System.out.println("Here is your card: " + card);  // Выводим информацию о карте
             }
             // Если пользователь ввел "N" (Нет), говорим "Хорошего дня"
             else if (input.equalsIgnoreCase("N")) {
-                System.out.println("Employ: N");
                 System.out.println("Have a nice day!");
 
             }
